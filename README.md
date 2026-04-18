@@ -1,4 +1,4 @@
-# 🚁 Drone Delivery Order API
+#  Drone Delivery Order API
 
 A production-ready RESTful API built with **Go (Golang)** and **Gin** for managing drone-based delivery operations — register drones, create orders, assign deliveries, and track status in real time.
 
@@ -17,7 +17,7 @@ A production-ready RESTful API built with **Go (Golang)** and **Gin** for managi
 
 ---
 
-## 📦 Features
+##  Features
 
 - ✅ Register and manage a fleet of drones
 - ✅ Create delivery orders with pickup/dropoff locations
@@ -48,7 +48,7 @@ drone-delivery-api/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -72,7 +72,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Health Check
 
@@ -82,7 +82,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-### 🤖 Drones
+###  Drones
 
 | Method | Endpoint                    | Description                    |
 | ------ | --------------------------- | ------------------------------ |
@@ -93,7 +93,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-### 📦 Orders
+###  Orders
 
 | Method | Endpoint                    | Description                  |
 | ------ | --------------------------- | ---------------------------- |
@@ -105,7 +105,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-## 📋 Request & Response Examples
+##  Request & Response Examples
 
 ### Register a Drone
 
@@ -180,7 +180,7 @@ Server starts at: `http://localhost:8080`
 }
 ```
 
-> ⚠️ Assignment will fail if:
+> Assignment will fail if:
 >
 > - Drone is not `available`
 > - Drone battery is below 20%
@@ -221,7 +221,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-## 🔄 Delivery Lifecycle
+##  Delivery Lifecycle
 
 ```
 [Create Order]     →   status: pending
@@ -237,7 +237,7 @@ Server starts at: `http://localhost:8080`
 
 ---
 
-## 🧪 Testing with cURL
+##  Testing with cURL
 
 ```bash
 # Health check
@@ -271,7 +271,7 @@ curl -X PATCH http://localhost:8080/api/v1/orders/<ORDER_ID>/status \
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] PostgreSQL / Redis persistence
 - [ ] JWT authentication & role-based access
@@ -283,13 +283,11 @@ curl -X PATCH http://localhost:8080/api/v1/orders/<ORDER_ID>/status \
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Ayobami Masterpiece**
 Software Engineer | Drone Tech Enthusiast
 
 ---
 
-## 📄 License
 
-MIT License — feel free to use and build on this project.
