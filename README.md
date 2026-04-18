@@ -8,12 +8,12 @@ A production-ready RESTful API built with **Go (Golang)** and **Gin** for managi
 
 ## 🛠 Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| [Go](https://golang.org/) | Core language |
-| [Gin](https://github.com/gin-gonic/gin) | HTTP web framework |
-| [UUID](https://github.com/google/uuid) | Unique ID generation |
-| `sync.RWMutex` | Concurrent-safe in-memory storage |
+| Tool                                    | Purpose                           |
+| --------------------------------------- | --------------------------------- |
+| [Go](https://golang.org/)               | Core language                     |
+| [Gin](https://github.com/gin-gonic/gin) | HTTP web framework                |
+| [UUID](https://github.com/google/uuid)  | Unique ID generation              |
+| `sync.RWMutex`                          | Concurrent-safe in-memory storage |
 
 ---
 
@@ -58,7 +58,7 @@ drone-delivery-api/
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/drone-delivery-api.git
+git clone https://github.com/CookingApps/drone-delivery-api.git
 cd drone-delivery-api
 
 # Install dependencies
@@ -76,32 +76,32 @@ Server starts at: `http://localhost:8080`
 
 ### Health Check
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/health` | Check if the server is running |
+| Method | Endpoint  | Description                    |
+| ------ | --------- | ------------------------------ |
+| GET    | `/health` | Check if the server is running |
 
 ---
 
 ### 🤖 Drones
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/drones` | Register a new drone |
-| GET | `/api/v1/drones` | Get all drones |
-| GET | `/api/v1/drones/:id` | Get a specific drone |
-| PATCH | `/api/v1/drones/:id/status` | Update drone status or battery |
+| Method | Endpoint                    | Description                    |
+| ------ | --------------------------- | ------------------------------ |
+| POST   | `/api/v1/drones`            | Register a new drone           |
+| GET    | `/api/v1/drones`            | Get all drones                 |
+| GET    | `/api/v1/drones/:id`        | Get a specific drone           |
+| PATCH  | `/api/v1/drones/:id/status` | Update drone status or battery |
 
 ---
 
 ### 📦 Orders
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/v1/orders` | Create a new delivery order |
-| GET | `/api/v1/orders` | Get all orders |
-| GET | `/api/v1/orders/:id` | Get a specific order |
-| POST | `/api/v1/orders/:id/assign` | Assign an order to a drone |
-| PATCH | `/api/v1/orders/:id/status` | Update order delivery status |
+| Method | Endpoint                    | Description                  |
+| ------ | --------------------------- | ---------------------------- |
+| POST   | `/api/v1/orders`            | Create a new delivery order  |
+| GET    | `/api/v1/orders`            | Get all orders               |
+| GET    | `/api/v1/orders/:id`        | Get a specific order         |
+| POST   | `/api/v1/orders/:id/assign` | Assign an order to a drone   |
+| PATCH  | `/api/v1/orders/:id/status` | Update order delivery status |
 
 ---
 
@@ -181,6 +181,7 @@ Server starts at: `http://localhost:8080`
 ```
 
 > ⚠️ Assignment will fail if:
+>
 > - Drone is not `available`
 > - Drone battery is below 20%
 > - Order is not in `pending` status
@@ -284,9 +285,8 @@ curl -X PATCH http://localhost:8080/api/v1/orders/<ORDER_ID>/status \
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Ayobami Masterpiece**
 Software Engineer | Drone Tech Enthusiast
-[GitHub](https://github.com/yourusername) · [LinkedIn](https://linkedin.com/in/yourprofile) · [Twitter](https://twitter.com/yourhandle)
 
 ---
 
